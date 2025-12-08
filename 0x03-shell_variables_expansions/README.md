@@ -1,3 +1,1 @@
-0x03-shell_variables_expansions
-0x03-shell_variables_expansions
-0x03-shell_variables_expansions
+This project covers the basics of shell variables, environment variables, and arithmetic operations in Bash. The tasks in this directory help understand how to create, modify, and manipulate variables, as well as perform operations using them in scripts.
