@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script prints the current user in the format expected by the checker
+# This script prints the current user in the exact format expected
 
 echo "USER"
-whoami
+echo "$(whoami)"
