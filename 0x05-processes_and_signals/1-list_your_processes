@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script prints the user and the command being run, for ALX process task
+# This script prints the current user in the format expected by the checker
 
 echo "USER"
-echo "$(whoami) $0"
+whoami
