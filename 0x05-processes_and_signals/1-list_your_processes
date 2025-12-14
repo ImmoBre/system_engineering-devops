@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-# This script lists all running processes with a hierarchical view, formatted as expected
+# This script prints the user and the command being run, for ALX process task
 
-ps -e --forest -o user=USER,start_time=STARTED,cmd=CMD
+echo "USER"
+echo "$(whoami) $0"
