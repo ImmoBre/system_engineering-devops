@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 # This script prints the current user in the exact format expected
-
 echo "USER"
-echo "$(whoami)"
+whoami
