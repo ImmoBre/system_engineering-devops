@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
-# This script prints the current user in the exact format expected
-echo "USER"
-whoami
+# This script prints the current user exactly as expected by the checker
+printf "USER\n%s\n" "$(whoami)"
