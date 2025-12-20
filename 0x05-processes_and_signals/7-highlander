@@ -1,12 +1,10 @@
 #!/usr/bin/env bash
-# This script displays "To infinity and beyond" indefinitely and
-# intercepts SIGTERM signals to print a specific message.
+# Script that handles SIGTERM and loops indefinitely
 
-# Define the trap: when SIGTERM is received, print the message.
-# We use the signal name SIGTERM (or 15).
+# Trap SIGTERM and print the required message
 trap "echo 'I am invincible!!!'" SIGTERM
 
-# The infinite loop
+# Infinite loop with 2-second sleep
 while true
 do
     echo "To infinity and beyond"
