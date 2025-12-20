@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
-# This script loops indefinitely and "survives" SIGTERM signals
+# Script that handles SIGTERM and loops indefinitely
 
-# Define the trap: when SIGTERM is received, print the message
 trap 'echo "I am invincible!!!"' SIGTERM
 
-# Infinite loop
 while true
 do
     echo "To infinity and beyond"
