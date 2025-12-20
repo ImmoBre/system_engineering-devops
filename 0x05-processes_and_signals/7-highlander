@@ -1,5 +1,4 @@
-#!/bin/bash
-
+#!/usr/bin/env bash
 # Define a trap for SIGTERM that prints the message but does not exit
 trap 'echo "I am invincible!!!"' TERM
 
