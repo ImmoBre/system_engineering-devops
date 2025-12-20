@@ -2,4 +2,4 @@
 # This script kills the 7-highlander process using SIGKILL
 
 # Find and forcibly kill the process
-# pkill -9 -f 7-highlander
+pkill -9 -f 7-highlander
