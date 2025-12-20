@@ -1,11 +1,17 @@
 #!/usr/bin/env bash
-# Displays "To infinity and beyond" indefinitely with
-#+ a sleep 2 in between each iteration.
-#   Displays "I am invincible!!!" in between each iteration.
+# Bash script that displays `To infinity and beyond` indefinitely
+# In between each iteration of the loop, add a `sleep 2`
+# Prints `I am invincible!!!` when receiving a `SIGTERM` signal
 
-while true
+function termHandler() {
+        printf "I am invincible!!!\n"
+}
+
+trap "termHandler" SIGTERM
+
+while 'true'
 do
-  echo "To infinity and beyond"
-  sleep 2
-  trap 'echo "I am invincible!!!"' SIGTERM
+	printf "To infinity and beyond\n"
+
+	sleep 2
 done
