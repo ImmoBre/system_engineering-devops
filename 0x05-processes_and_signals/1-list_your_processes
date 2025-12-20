@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-#
-ps -ef --forest
+# This script displays a comprehensive list of all running processes 
+# including those without a TTY, showing process hierarchy.
+ps auxf
