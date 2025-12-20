@@ -1,11 +1,10 @@
 #!/usr/bin/env bash
-# Highlander: prints "To infinity and beyond" indefinitely and handles SIGTERM
+# This script loops indefinitely and "survives" SIGTERM signals
 
+# Define the trap: when SIGTERM is received, print the message
 trap 'echo "I am invincible!!!"' SIGTERM
 
-# Signal that script started successfully
-echo "OK"
-
+# Infinite loop
 while true
 do
     echo "To infinity and beyond"
